@@ -1,0 +1,114 @@
+// Variablaes
+$headers: #0B132B ;  
+$backgroundColor: #3A506B; 
+$textColor: rgb(100, 156, 155); 
+
+//div {border: .2em solid;}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: max-content auto max-content;
+}
+
+header {
+  background-color: $headers;
+  text-align: center;
+  color: $textColor;
+  h1{
+    font-size: 2.4vw;
+    padding: .4em;
+  }
+}
+
+main {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 0 .2em;
+  background-color: $backgroundColor;
+  width: 100vw;
+  border-left: .4em solid $headers;
+  border-right: .4em solid $headers;
+  #container {
+    padding: .2em;
+    color: $textColor;
+    width: 80%;
+    display: grid;
+    justify-items: center;
+    .quote {
+      padding: 0.4em;
+      margin-bottom: .1em;
+      border: .3em solid $headers;
+      border-radius: .8em;
+      text-align: center;
+      width: 80%;
+      h5 {
+        text-align: right;
+      }
+      .error {
+        color: red;
+      }
+    }
+    .generateBtn {
+      text-align: center;
+      padding: .2em 0;
+      width: 80%;
+      button {
+        background-color: $headers;
+        border-style: none;
+        height: 5vh;
+        border-radius: .8em;
+        color: $textColor; 
+        &:hover {
+          background-color: $textColor; 
+          color: $backgroundColor;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $headers;
+  text-align: center;
+  color: $textColor;
+}
+
+// Media Queries
+@media only screen and (max-width: 768px) {
+  header {
+    h1{
+      font-size: 4.8vw;
+    }
+  }
+
+  main {
+    #container {
+      width: 100%;
+      .quote {
+        width: 90%;
+        h5 {
+          text-align: right;
+          padding-right: 1em;
+        }
+      }
+      .generateBtn {
+        text-align: center;
+        padding: .4em .4em;
+        width: 80%;
+        button {
+          height: max-content; 
+          padding: .1em .8em;
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+}

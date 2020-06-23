@@ -1,0 +1,120 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: max-content auto max-content;
+      grid-template-rows: -webkit-max-content auto -webkit-max-content;
+      grid-template-rows: max-content auto max-content;
+}
+
+header {
+  background-color: #0B132B;
+  text-align: center;
+  color: #649c9b;
+}
+
+header h1 {
+  font-size: 2.4vw;
+  padding: .4em;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 .2em;
+  background-color: #3A506B;
+  width: 100vw;
+  border-left: 0.4em solid #0B132B;
+  border-right: 0.4em solid #0B132B;
+}
+
+main #container {
+  padding: .2em;
+  color: #649c9b;
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+main #container .quote {
+  padding: 0.4em;
+  margin-bottom: .1em;
+  border: 0.3em solid #0B132B;
+  border-radius: .8em;
+  text-align: center;
+  width: 80%;
+}
+
+main #container .quote h5 {
+  text-align: right;
+}
+
+main #container .quote .error {
+  color: red;
+}
+
+main #container .generateBtn {
+  text-align: center;
+  padding: .2em 0;
+  width: 80%;
+}
+
+main #container .generateBtn button {
+  background-color: #0B132B;
+  border-style: none;
+  height: 5vh;
+  border-radius: .8em;
+  color: #649c9b;
+}
+
+main #container .generateBtn button:hover {
+  background-color: #649c9b;
+  color: #3A506B;
+}
+
+footer {
+  background-color: #0B132B;
+  text-align: center;
+  color: #649c9b;
+}
+
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 4.8vw;
+  }
+  main #container {
+    width: 100%;
+  }
+  main #container .quote {
+    width: 90%;
+  }
+  main #container .quote h5 {
+    text-align: right;
+    padding-right: 1em;
+  }
+  main #container .generateBtn {
+    text-align: center;
+    padding: .4em .4em;
+    width: 80%;
+  }
+  main #container .generateBtn button {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: .1em .8em;
+    font-size: 3vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

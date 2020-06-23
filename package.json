@@ -1,0 +1,23 @@
+{
+  "name": "randomquote",
+  "version": "1.0.0",
+  "description": "Application that generate random quotes when you press a button",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build"
+  },
+  "keywords": [
+    "Html",
+    "Scss",
+    "Javascript"
+  ],
+  "author": "Shepherd Magwagwa",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-uglify-es": "^2.0.0"
+  }
+}
